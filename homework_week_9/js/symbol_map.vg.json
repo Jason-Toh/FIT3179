@@ -17,7 +17,7 @@
          },
          "mark":{
             "type":"geoshape",
-            "fill":"lightgray",
+            "fill":"#ffcc99",
             "stroke":"white"
          }
       },
@@ -27,9 +27,7 @@
          },
          "mark":{
             "type":"circle",
-            "tooltip":{
-               "content":"data"
-            }
+            "tooltip":null
          },
          "encoding":{
             "longitude":{

@@ -1,0 +1,59 @@
+{
+    "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
+    "width":500,
+    "height":400,
+    "title":"Number of crimes over the years",
+    "data":{
+       "url":"https://raw.githubusercontent.com/Jason-Toh/FIT3179/main/homework_week_10/data/nyc_crime_filtered.csv"
+    },
+    "params":[
+       {
+          "name":"current_year",
+          "value":2006,
+          "bind":{
+             "input":"range",
+             "min":2006,
+             "max":2019,
+             "step":1,
+             "name":"Year: "
+          }
+       }
+    ],
+    "transform":[
+       {
+          "filter":{
+             "timeUnit":"year",
+             "field":"arrest_date",
+             "equal":"current_year"
+          }
+       }
+    ],
+    "mark":"bar",
+    "encoding":{
+       "x":{
+          "field":"arrest_key",
+          "aggregate":"count",
+          "type":"quantitative",
+          "title":"Number of Offences"
+       },
+       "y":{
+          "field":"ofns_desc",
+          "title":"Name of Offence",
+          "sort":{
+             "op":"count",
+             "field":"arrest_key",
+             "order":"descending"
+          }
+       },
+       "color":{
+          "field":"arrest_key",
+          "aggregate":"count",
+          "type":"quantitative",
+          "title":"Number of Offences",
+          "scale":{
+             "scheme":"viridis",
+             "reverse":true
+          }
+       }
+    }
+ }

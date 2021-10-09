@@ -54,6 +54,14 @@
              "scheme":"viridis",
              "reverse":true
           }
-       }
+       },
+       "tooltip" : [
+          {
+             "field" : "ofns_desc", "type": "nominal", "title" : "Name of Crime: "
+          },
+          {
+             "aggregate" : "count", "type":  "quantitative", "title": "Number of Offence: "
+          }
+       ]
     }
  }

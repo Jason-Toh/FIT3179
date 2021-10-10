@@ -55,8 +55,14 @@
                "type":"quantitative",
                "title":"Number of Offences",
                "scale":{
-                  "scheme":"viridis",
-                  "reverse":true
+                  "range" : [
+                     "#280659",
+                     "#341671",
+                     "#422680",
+                     "#660F58",
+                     "#AE2068"
+                  ],
+                  "reverse" : true
                }
             },
             "tooltip":[

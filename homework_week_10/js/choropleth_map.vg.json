@@ -36,7 +36,13 @@
          "field":"Number of Crimes",
          "type":"quantitative",
          "scale":{
-            "scheme":"viridis",
+            "range" : [
+               "#280659",
+               "#341671",
+               "#422680",
+               "#660F58",
+               "#AE2068"
+            ],
             "reverse":true
          }
       },

@@ -1,0 +1,62 @@
+{
+    "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
+    "width":300,
+    "height":400,
+    "data":{
+       "url":"https://raw.githubusercontent.com/Jason-Toh/FIT3179/main/assignment_2/data/nyc_crime_filtered.csv"
+    },
+    "transform":[
+       {
+          "calculate":"{'M':'Male','F':'Female'}[datum.perp_sex]",
+          "as":"gender"
+       }
+    ],
+    "mark":"bar",
+    "encoding":{
+       "x":{
+          "field":"age_group",
+          "type":"ordinal",
+          "title":"Age Group",
+          "sort":[
+             "<18",
+             "18-24",
+             "25-44",
+             "45-64",
+             "65+"
+          ],
+          "axis":{"labelFontSize": 15,"labelAngle":0}
+       },
+       "y":{
+          "field":"arrest_key",
+          "aggregate":"count",
+          "type":"quantitative",
+          "title":"Number of Offences"
+       },
+       "color":{
+          "field":"gender",
+          "type":"ordinal",
+          "scale":{
+             "range":[
+                "#675193",
+                "#ca8861"
+             ]
+          },
+          "legend":{
+             "title":"Gender"
+          }
+       },
+       "tooltip":[
+          {
+             "field":"gender",
+             "type":"nominal",
+             "title":"Gender"
+          },
+          {
+             "field":"arrest_key",
+             "aggregate":"count",
+             "type":"quantitative",
+             "title":"Offence Count"
+          }
+       ]
+    }
+ }

@@ -61,5 +61,8 @@
              "orient":"top"
           }
        }
-    ]
+    ],
+    "view": {
+       "stroke":null
+    }
  }

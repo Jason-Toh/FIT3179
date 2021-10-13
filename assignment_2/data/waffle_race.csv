@@ -1,0 +1,101 @@
+Row,Column,Percentage,Race
+1,1,1%,Black
+1,2,2%,Black
+1,3,3%,Black
+1,4,4%,Black
+1,5,5%,Black
+1,6,6%,Black
+1,7,7%,Black
+1,8,8%,Black
+1,9,9%,Black
+1,10,10%,Black
+2,1,11%,Black
+2,2,12%,Black
+2,3,13%,Black
+2,4,14%,Black
+2,5,15%,Black
+2,6,16%,Black
+2,7,17%,Black
+2,8,18%,Black
+2,9,19%,Black
+2,10,20%,Black
+3,1,21%,Black
+3,2,22%,Black
+3,3,23%,Black
+3,4,24%,Black
+3,5,25%,Black
+3,6,26%,Black
+3,7,27%,Black
+3,8,28%,Black
+3,9,29%,Black
+3,10,30%,Black
+4,1,31%,Black
+4,2,32%,Black
+4,3,33%,Black
+4,4,34%,Black
+4,5,35%,Black
+4,6,36%,Black
+4,7,37%,Black
+4,8,38%,Black
+4,9,39%,Black
+4,10,40%,Black
+5,1,41%,Black
+5,2,42%,Black
+5,3,43%,Black
+5,4,44%,Black
+5,5,45%,Black
+5,6,46%,Black
+5,7,47%,Black
+5,8,48%,Black
+5,9,49%,Black
+5,10,50%,Black
+6,1,51%,Black
+6,2,52%,Black
+6,3,53%,Black
+6,4,54%,White
+6,5,55%,White
+6,6,56%,White
+6,7,57%,White
+6,8,58%,White
+6,9,59%,White
+6,10,60%,White
+7,1,61%,White
+7,2,62%,White
+7,3,63%,Black Hispanic
+7,4,64%,Black Hispanic
+7,5,65%,Black Hispanic
+7,6,66%,Black Hispanic
+7,7,67%,Black Hispanic
+7,8,68%,Black Hispanic
+7,9,69%,Black Hispanic
+7,10,70%,Black Hispanic
+8,1,71%,Black Hispanic
+8,2,72%,Black Hispanic
+8,3,73%,Black Hispanic
+8,4,74%,Black Hispanic
+8,5,75%,White Hispanic
+8,6,76%,White Hispanic
+8,7,77%,White Hispanic
+8,8,78%,White Hispanic
+8,9,79%,White Hispanic
+8,10,80%,White Hispanic
+9,1,81%,White Hispanic
+9,2,82%,White Hispanic
+9,3,83%,White Hispanic
+9,4,84%,White Hispanic
+9,5,85%,White Hispanic
+9,6,86%,White Hispanic
+9,7,87%,White Hispanic
+9,8,88%,White Hispanic
+9,9,89%,White Hispanic
+9,10,90%,White Hispanic
+10,1,91%,White Hispanic
+10,2,92%,White Hispanic
+10,3,93%,White Hispanic
+10,4,94%,White Hispanic
+10,5,95%,White Hispanic
+10,6,96%,White Hispanic
+10,7,97%,Asian
+10,8,98%,Asian
+10,9,99%,Asian
+10,10,100%,Asian

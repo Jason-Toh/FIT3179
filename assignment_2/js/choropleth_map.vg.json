@@ -1,0 +1,62 @@
+{
+   "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
+   "title":"Number of Crimes in New York City",
+   "width":600,
+   "height":400,
+   "data":{
+      "url":"https://raw.githubusercontent.com/Jason-Toh/FIT3179/main/homework_week_10/js/newyork.topojson",
+      "format":{
+         "type":"topojson",
+         "feature":"newyork"
+      }
+   },
+   "transform":[
+      {
+         "lookup":"properties.boro_name",
+         "from":{
+            "data":{
+               "url":"https://raw.githubusercontent.com/Jason-Toh/FIT3179/main/homework_week_10/data/crimes_nyc_map.csv"
+            },
+            "key":"Borough",
+            "fields":[
+               "Crimes_count"
+            ]
+         }
+      },
+      {
+         "calculate":"datum.Crimes_count",
+         "as":"Number of Crimes"
+      }
+   ],
+   "mark":{
+      "type":"geoshape"
+   },
+   "encoding":{
+      "color":{
+         "field":"Number of Crimes",
+         "type":"quantitative",
+         "scale":{
+            "range" : [
+               "#280659",
+               "#341671",
+               "#422680",
+               "#660F58",
+               "#AE2068"
+            ],
+            "reverse":true
+         }
+      },
+      "tooltip":[
+         {
+            "field":"properties.boro_name",
+            "type":"nominal",
+            "title":"Borough"
+         },
+         {
+            "field":"Crimes_count",
+            "title":"Number of Crimes",
+            "type":"quantitative"
+         }
+      ]
+   }
+}

@@ -2,14 +2,15 @@
 	font-family: 'Source Sans Pro',"Sans-serif";
 }
 
-body {
-	background-color: gray;
-}
+/* body {
+	/* background-color: gray;
+} */
 
 .page{
 	width: 1000px;    
 	background-color: white;   
 	margin: auto;
+	padding: 20px
  }
 
  h1,h2,h3 {
@@ -18,13 +19,13 @@ body {
 
  h1 {
 	 padding-top: 50px;
-	 margin: 20px;
+	 /* margin: 20px; */
 	 font-size: 60px;
  }
 
  h2 {
 	 background-color: lightblue;
-	 margin: 50px;
+	 /* margin: 50px; */
 	 padding: 20px;
 	 font-size: 35px;
  }
@@ -40,6 +41,7 @@ body {
 
 p {
 	padding: 50px;
+	font-size: 20px;
 }
 
 .viz-container {

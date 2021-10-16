@@ -1,6 +1,6 @@
-Borough,Crimes_count
-Brooklyn,14540
-Queens,12219
-Bronx,10967
-Manhattan,10152
-Staten Island,2140
+Borough,Crimes_count,Population
+Brooklyn,14540,2648452
+Queens,12219,2330295
+Bronx,10967,1466788
+Manhattan,10152,1638281
+Staten Island,2140,487155

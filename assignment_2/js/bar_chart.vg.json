@@ -1,6 +1,7 @@
 {
    "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
-   "width":400,
+   "background":"#B7E9F7",
+   "width":"container",
    "height":350,
    "title":"Number of crimes over the years",
    "data":{
@@ -50,20 +51,20 @@
          "mark":"bar",
          "encoding":{
             "color":{
-               "field":"arrest_key",
-               "aggregate":"count",
-               "type":"quantitative",
-               "title":"Number of Offences",
+               "field":"ofns_desc",
+               "type":"nominal",
                "scale":{
                   "range" : [
-                     "#280659",
-                     "#341671",
-                     "#422680",
-                     "#660F58",
-                     "#AE2068"
-                  ],
-                  "reverse" : true
-               }
+                     "#1F77B4FF",
+                     "#FF7F0EFF",
+                     "#2CA02CFF",
+                     "#D62728FF",
+                     "#9467BDFF",
+                     "#BCBD22FF",
+                     "#17BECFFF"
+                  ]
+               },
+               "legend":null
             },
             "tooltip":[
                {

@@ -1,7 +1,8 @@
 {
    "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
    "title":"Number of Crimes in New York City",
-   "width":500,
+   "background":"#B7E9F7",
+   "width":"container",
    "height":400,
    "data":{
       "url":"https://raw.githubusercontent.com/Jason-Toh/FIT3179/main/homework_week_10/js/newyork.topojson",
@@ -15,17 +16,17 @@
          "lookup":"properties.boro_name",
          "from":{
             "data":{
-               "url":"https://raw.githubusercontent.com/Jason-Toh/FIT3179/main/homework_week_10/data/crimes_nyc_map.csv"
+               "url":"https://raw.githubusercontent.com/Jason-Toh/FIT3179/main/assignment_2/data/crimes_nyc_map.csv"
             },
             "key":"Borough",
             "fields":[
-               "Crimes_count"
+               "Crimes_count","Population"
             ]
          }
       },
       {
-         "calculate":"datum.Crimes_count",
-         "as":"Number of Crimes"
+         "calculate":"datum.Crimes_count/datum.Population * 100000",
+         "as":"Crimes per 100,000 population"
       }
    ],
    "mark":{
@@ -33,17 +34,12 @@
    },
    "encoding":{
       "color":{
-         "field":"Number of Crimes",
+         "field":"Crimes per 100,000 population",
          "type":"quantitative",
          "scale":{
             "range" : [
-               "#280659",
-               "#341671",
-               "#422680",
-               "#660F58",
-               "#AE2068"
-            ],
-            "reverse":true
+               "#fdd0a2","#fdae6b", "#fd8d3c","#d94801", "#a63603"
+            ]
          }
       },
       "tooltip":[
@@ -54,12 +50,24 @@
          },
          {
             "field":"Crimes_count",
-            "title":"Number of Crimes",
+            "title":"Total Crimes",
             "type":"quantitative"
+         }, 
+         {
+            "field":"Population",
+            "title":"Population",
+            "type": "quantitative"
+         },
+         {
+            "field":"Crimes per 100,000 population",
+            "title":"Crimes per 100,000 population",
+            "type":"quantitative",
+            "format":".0f"
          }
       ]
    },
    "view": {
       "stroke":null
-   }
+   },
+   "config": {"view": {"stroke": "transparent"}}
 }

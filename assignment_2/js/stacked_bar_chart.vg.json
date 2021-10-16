@@ -1,6 +1,6 @@
 {
     "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
-    "width":300,
+    "width":"container",
     "height":400,
     "data":{
        "url":"https://raw.githubusercontent.com/Jason-Toh/FIT3179/main/assignment_2/data/nyc_crime_filtered.csv"

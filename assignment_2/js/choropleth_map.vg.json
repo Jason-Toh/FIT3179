@@ -1,7 +1,7 @@
 {
    "$schema":"https://vega.github.io/schema/vega-lite/v5.json",
    "title":"Number of Crimes in New York City",
-   "background":"#B7E9F7",
+   "background":"#fff7fb",
    "width":"container",
    "height":400,
    "data":{

@@ -79,3 +79,8 @@ h1 {
 .vis-container {
     padding: 50px;
 }
+
+#murder {
+   color: #9467BDFF;
+   font-weight: bold;
+}

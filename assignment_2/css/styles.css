@@ -84,3 +84,68 @@ h1 {
    color: #9467BDFF;
    font-weight: bold;
 }
+
+#harrassment {
+    color: #FF7F0EFF;
+    font-weight: bold;
+}
+
+#kidnapping {
+    color: #2CA02CFF;
+    font-weight: bold;
+}
+
+#rape {
+    color: #17BECFFF;
+    font-weight: bold;
+}
+
+#larceny {
+    color: #D62728FF;
+    font-weight: bold;
+}
+
+#theft {
+    color: #BCBD22FF;
+    font-weight: bold;
+}
+
+#arson {
+    color: #1F77B4FF;
+    font-weight: bold;
+}
+
+#male {
+    color: #AE2D68;
+    font-weight: bold;
+}
+
+#female {
+    color: #422680;
+    font-weight: bold;
+}
+
+#black {
+    color: #1F77B4FF;
+    font-weight: bold;
+}
+
+#white{
+    color: #FF7F0EFF;
+    font-weight: bold;
+}
+
+#white-hispanic {
+    color:#2CA02CFF;
+    font-weight: bold;
+}
+
+#black-hispanic {
+    color: #D62728FF;
+    font-weight: bold;
+}
+
+#asian {
+    color: #9467BDFF;
+    font-weight: bold;
+}
